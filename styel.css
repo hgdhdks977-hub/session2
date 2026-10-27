@@ -1,0 +1,120 @@
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+body{font-family: sans-serif;
+background-color: rgba(119, 136, 153, 0.212);}
+.container{width: 90%;
+margin: 0 auto;}
+img{max-width: 100%;}
+nav{background-color: #1f2937;
+display: flex;
+justify-content: space-between;
+align-items: center;}
+h2{color: white;
+font-weight: bold;
+
+}
+a{text-decoration: none;
+    color: white;
+    padding: 20px;
+    transition: 0.5s;
+}
+ul{list-style-type: none;
+display: flex;
+gap: 60px;}
+a:hover{color: red;}
+button{background-color: #f59E0B;
+color: black;
+padding: 2.5px;
+border-radius: 6px;
+cursor: pointer;
+  transition: 0.5s;
+  animation-name: pulse ;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+button:hover{background-color: blue;}
+.hero{background-image: linear-gradient(to left, rgb(6, 17, 39) ,rgb(40, 132, 218) ,rgb(10, 73, 63) ,rgb(52, 80, 7));
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 40px;}
+.hero_text{color: black;
+flex: 1;
+width: 50%;
+animation-name:fadelnup ;
+animation-duration: 1s;}
+
+.hero_img{flex: 1;
+width: 50%;
+
+animation-name:slideinright ;
+animation-duration: 1.2s;
+animation-iteration-count: infinite;}
+.hero_img img{border-radius: 50px;}
+@keyframes fadelnup{0%{transform: translate(0px,0px);}
+100%
+{transform: translateY(40px);}
+
+
+}
+@keyframes slideinright{0%{transform: translateX(100px);}
+100%{transform: translateX(0px);}}
+@keyframes pulse{0%{transform: scale(1);}
+100%{transform: scale(1.08);}}
+
+
+ .cards-container{display: flex;
+
+justify-content: center;
+gap: 30px;
+flex-wrap: wrap;}
+h3{text-align: center;}
+.card{width: 300px;
+background-color: white;
+border-radius: 20px;
+box-shadow: 2px 2px 2px 2px ;
+text-align: center;
+padding: 2px;
+transition: 1s;}
+.cardimg img{width: 100%;
+height: 180px;
+object-fit: cover;
+border-radius: 20px;
+}
+.card:hover{transform: translateY(-8px);}
+.gallery{display: grid;
+grid-template-columns: repeat(3,1fr);
+
+object-fit: cover;}
+h1{text-align: center;}
+.gallery img{
+    width: 100%;
+height: 220px;
+object-fit: cover;
+
+border-radius: 20px;
+gap: 15px;
+transition: 1s;}
+.galleryimages1{
+    grid-column: 1/span 2;
+   
+    object-fit: cover;
+    border-radius: 20px;
+}
+.galleryimages2{grid-column: 1/3 span;
+  
+    object-fit: cover;
+    border-radius: 20px;}
+    footer{background-color: black;
+        
+    padding: 2px;}
+    h3{color: white;}
+ .footer-top{display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ .t{color: white;
+text-align: center;}
+
+.gallery img:hover{transform:scale(1.05) ;}
